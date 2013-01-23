@@ -5,3 +5,5 @@ bin
 *.aux
 *.pdf
 *.gz
+en_GB
+en_US
