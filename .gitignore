@@ -3,8 +3,7 @@ bin
 ~*
 *.log
 *.aux
-*.pdf
-*.gz
+*.gz*
 *.out
 en_GB
 en_US
