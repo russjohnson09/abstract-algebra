@@ -254,8 +254,118 @@ From this we can conclude that $G$ is Abelian.\\
 ~\\
 In conclusion, we have shown that if a group $G$ is Abelian, then $(ab)^2 = a^2 b^2$ for all $a, b \in G$. We have also shown that if $(ab)^2 = a^2b^2$ for all $a,b\in G$, then $G$ is Abelian. Therefore we have shown that a group $G$ is Abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$.
 \end{proof}
+~\\
+(1) Let $G$ be a group.\\
+(a) Let $a, b, c \in G$. What element is $(abc)^{-1}$ ?\\
+~\\
+{\bf Conjecture. } The inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
+
+\begin{proof}
+Let $G$ be a group and let $a, b, c \in G$. First of all, we know that
+\begin{equation}\label{41}
+(abc)(c^{-1}b^{-1}a^{-1}) = (abc)(c^{-1}b^{-1}a^{-1}).
+\end{equation}
+Applying the associative property to \eqref{41} we obtain
+\begin{equation}\label{42}
+(abc)(c^{-1}b^{-1}a^{-1}) = (ab(cc^{-1})(b^{-1}a^{-1}).
+\end{equation}
+Multiplying $c$ and the inverse of $c$ in \eqref{42} we obtain the identity element of $G$, $e$.
+\begin{equation}\label{43}
+(abc)(c^{-1}b^{-1}a^{-1}) = (abe)(b^{-1}a^{-1}).
+\end{equation}
+The identity element can be multiplied out of \eqref{43} to obtain
+\begin{equation}
+(abc)(c^{-1}b^{-1}a^{-1}) = (ab)(b^{-1}a^{-1}).
+\end{equation}
+Repeating this process we see that
+\[(abc)(c^{-1}b^{-1}a^{-1}) = a(bb^{-1})a^{-1} = aea^{-1} = aa^{-1} = e.\]
+We can also apply the same rules to show that 
+\[(c^{-1}b^{-1}a^{-1})(abc) = (c^{-1}b^{-1})(bc) = c^{-1}c = e.\]
+And so we have shown that the inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
+\end{proof}
+
+(b) Let $m$ be a positive integer, and let $a_1, a2 ,\ldots, a_m$ be elements in $G$.
+What element is $(a_1 a_2 \cdots a_m )^{-1}$ ?\\
+~\\
+{\bf Conjecture. } The inverse of $a_1 a_2 \ldots a_m$ is $a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$ for all $m\in\mathbb{Z^+}$.
+
+\begin{proof}
+We will prove our conjecture using induction. First we note that for $m=1$ we have $a_1^{-1} = a_1^{-1}$ and for $m=2$ we have $(a_1a_2)^{-1} = a_2^{-1}a_1^{-1}$. The equation for $m=1$ is self-evident. For $m=2$ we see that
+\[(a_1a_2)(a_2^{-1}a_1^{-1}) = a_1(a_2a_2^{-1})a_1^{-1} = a_1ea_1^{-1} = a_1a_1^{-1} = e\]
+and
+\[(a_2^{-1}a_1^{-1})(a_1a_2) = a_2^{-1}(a_1^{-1}a_1)a_2 = a_2^{-1}ea_2 = a_2^{-1}a_2 = e.\]
+And so, for $m=2$ the conjecture is true.
+~\\
+For the next part of the proof we will show that if $m$ is true, then $m+1$ is also true. To do this we will show that 
+\[(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = e\]
+and
+\[(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1})(a_1 a_2 \ldots a_m a_{m+1}) = e\]
+and therefore the inverse of  $a_1 a_2 \ldots a_m a_{m+1}$ is $a_{m+1}^-1 a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$. First of all,
+\begin{equation}\label{51}
+(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = (a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}).
+\end{equation}
+Applying the associative property to \eqref{51} we obtain
+\begin{equation}\label{52}
+(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = (a_1 a_2 \ldots a_m) (a_{m+1}a_{m+1}^{-1})( a_m^{-1}\ldots a_1^{-1}).
+\end{equation}
+Multiplying out $a_{m+1}a_{m+1}^{-1}$ in \eqref{52} we obtain
+\begin{equation}\label{53}
+(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = (a_1 a_2 \ldots a_m)( a_m^{-1}\ldots a_1^{-1}).
+\end{equation}
+We already know that 
+\begin{equation}\label{54}
+(a_1 a_2 \ldots a_m)( a_m^{-1}\ldots a_1^{-1}) = e.
+\end{equation}
+from the hypothesis of the inductive proof. Applying the transitive property of equality to \eqref{53} and \eqref{54} we obtain
+\begin{equation}
+(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = e.
+\end{equation}
+In a similar manner we can show that
+\[(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1})(a_1 a_2 \ldots a_m a_{m+1}) = e. \]
+
+From this we see can conclude that the inverse of $a_1 a_2 \ldots a_m$ is $a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$ for all $m\in\mathbb{Z^+}$.
 
 
+\end{proof}
+
+(2) Prove that if $G$ is a group with identity $e$ in which $a^2 = e$ for every $a \in G$, then $G$ is an Abelian group. Is the converse true?\\
+~\\
+\begin{proof}
+Let $G$ be a group with identity $e$ such that $a^2 = e$ for all $a\in G$. Let $a,b\in G$. We know that
+\begin{equation}\label{61}
+(ab)(ab) = e.
+\end{equation}
+Multiplying $a$ on the left side of \eqref{61} we obtain
+\begin{equation}\label{62}
+a(ab)(ab) = ae.
+\end{equation}
+Because $e$ is the identity element in $G$ we know that $ae = a$. Applying this and the transitive property of equality to \eqref{62} we obtain
+\begin{equation}\label{63}
+a(ab)(ab) = a.
+\end{equation}
+Applying the associative property to \eqref{63} we obtain
+\begin{equation}\label{64}
+a^2b(ab) = a.
+\end{equation}
+From the knowledge that $a^2= e$, \eqref{64} becomes
+\begin{equation}\label{65}
+b(ab) = a.
+\end{equation}
+Multiplying $b$ on the right side of \eqref{65} we obtain
+\begin{equation}\label{66}
+b(ab)b = ab.
+\end{equation}
+Applying the associative property to \eqref{66} we obtain
+\begin{equation}\label{67}
+(ba)b^2 = ab.
+\end{equation}
+Again, coming from the fact that any element multiplied by itself is the identity element, \eqref{67} becomes
+\[ba = ab.\]
+~\\
+In conclusion we have shown that $G$ is Abelian.
+\end{proof}
+
+The converse of the statement in problem 2 is not true. For example we have the Abelian group $(\mathbb{Z},+)$. In this group $2+2 \neq 0$ and so being an Abelian group does not guarantee that for every element $a$ in the group with identity $e$, $a^2 = e$.
 
 \end{document}
 
