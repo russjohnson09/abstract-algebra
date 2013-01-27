@@ -196,6 +196,67 @@ $
 From this operation table we see that $a*[1] = [1]*a = a$ for all $a\in G$ and so $[1]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits a $b\in G$ such that $a*b = b*a = [1]$ and so every element has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under the binary operator $*$. We already know that multiplication of congruence classes is associative and so it will be associative in $G$.\\
 ~\\
 In conclusion, we have shown that the set $G$ has an identity, is closed, is associative, and each element has an inverse under the operator $*$. Therefore, $G$ is a group under the operator $*$.\\
+~\\
+(7) Let $k$ be an integer, and let $Z(k)$ be the set of integers on which an operation
+$\oplus_k$ is defined as follows:
+$a \oplus_k b = a + b − k$,
+where $a + b$ denotes the standard sum of $a$ and $b$ in $\mathbb{Z}$. Note that the set $Z(0)$
+is the group of integers under the standard addition. For which values of $k$ is
+$Z(k)$ a group under the operation $\oplus_k$?\\
+~\\
+{\bf Conjecture. } The set $Z(k)$ is a group for all $k\in \mathbb{Z}$.\\
+~\\
+First of all we note that $a+k-k = k + a -k = a$, and so $k$ is the identity element. This is consistent with the fact that $0$ is the identity element of integers under addition, $Z(0)$. Next we note that the operation $\oplus$ can be defined using only addition and the set of all integers is associative under addition. Therefore $Z(k)$ is associative for all $k\in \mathbb{Z}$. The set of integers are closed under addition and subtraction and so $Z(k)$ is closed under $\oplus_k$, because it consists of only adding and subtracting integers. Finally, every element $a\in Z(k)$ has an inverse. We see that $a + -a -k = -a + a - k = k$ and so the inverse of the arbitrary element $a \in Z(k)$ is $-a$.\\
+~\\
+In conclusion, we have shown that $Z(k)$ has an identity element, is associative, is closed, and each element has an inverse for all $k\in \mathbb{Z}$. Therefore $Z(k)$ is a group for all $k\in \mathbb{Z}$.\\
+~\\
+(8) Prove that a group $G$ is Abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$.
+
+\begin{proof}
+First we will show that if a group $G$ is Abelian, then $(ab)^2 = a^2 b^2$ for all $a, b \in G$.\\
+~\\
+Let $G$ be an abelian group and let $a,b\in G$. First of all,
+\begin{equation}\label{31}
+(ab)^2 = (ab)(ab).
+\end{equation}
+First, we apply the associative property of the group $G$ to \label{31} to obtain
+\begin{equation}\label{32}
+(ab)^2 = a(ba)b.
+\end{equation}
+Next, we use the commutative property of $G$ on \eqref{32} to obtain
+\begin{equation}\label{33}
+(ab)^2 = a(ab)b.
+\end{equation}
+Finally, applying the associative property to \eqref{33} we obtain
+\[(ab)^2 = a^2b^2.\]
+~\\
+Next we will show that if $(ab)^2 = a^2b^2$ for all $a,b\in G$, then $G$ is Abelian.
+~\\
+Let $G$ be a group such that
+\begin{equation}\label{34}
+(ab)^2 = a^2b^2
+\end{equation}
+for all $a,b \in G$. From \eqref{34} we also know that
+\begin{equation}\label{35}
+(ab)(ab) = (aa)(bb).
+\end{equation}
+Applying the associative property to \eqref{35} we obtain
+\begin{equation}\label{36}
+a((ba)b) = a((ab)b).
+\end{equation}
+Applying the group cancellation law to \eqref{36} we know that
+\begin{equation}\label{37}
+(ba)b = (ab)b.
+\end{equation}
+Applying the group cancellation law to \eqref{37} we obtain
+\[ba = ab.\]
+From this we can conclude that $G$ is Abelian.\\
+~\\
+In conclusion, we have shown that if a group $G$ is Abelian, then $(ab)^2 = a^2 b^2$ for all $a, b \in G$. We have also shown that if $(ab)^2 = a^2b^2$ for all $a,b\in G$, then $G$ is Abelian. Therefore we have shown that a group $G$ is Abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$.
+\end{proof}
+
+
+
 \end{document}
 
 Guidelines:
