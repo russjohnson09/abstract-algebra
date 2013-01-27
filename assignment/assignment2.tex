@@ -1,0 +1,122 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+\usepackage{verbatim}
+
+\usepackage{hyperref}
+
+
+%no paragraph indent
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+\begin{flushright}
+Russ Johnson\\
+Problem Set $\#2$\\
+\today\\
+\end{flushright}
+
+{\bf Activity 18.11}\\
+(a) In a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$ must it follow
+that $b = a^{-1}$?
+
+{\bf Conjecture. } In a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$, then $ba = e$ and consequently $b = a^{-1}$.
+
+\begin{proof}
+Let $G$ be a group with identity $e$ and let $a,b \in G$ such that
+\begin{equation}\label{11}
+ab = e.
+\end{equation}
+Multiplying $a$ on the right side of \eqref{11} we obtain
+\begin{equation}\label{12}
+(ab)a = ea.
+\end{equation}
+Applying the associative property of groups from \eqref{12} we know that
+\begin{equation}\label{13}
+a(ba) = ea.
+\end{equation}
+Because $e$ is the identity of $G$,
+\begin{equation}\label{14}
+ea = ae.
+\end{equation}
+Applying the transitive property of equality to \eqref{13} and \eqref{14} we obtain
+\begin{equation}\label{15}
+a(ba) = ae.
+\end{equation}
+Applying the group cancellation law to \eqref{15} we obtain
+\begin{equation}
+ba = e.
+\end{equation}
+
+In conclusion we have shown that in a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$, then $ba = e$. From the fact that $ab = e$ and $ba = e$ we can conclude that $b$ is the inverse of $a$.
+\end{proof}
+
+(a) In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$ must it follow
+that $b = a^{-1}$?
+
+{\bf Conjecture. } In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$, then $ab = e$ and consequently $b = a^{-1}$.
+
+\begin{proof}
+Let $G$ be a group with identity $e$ and let $a,b \in G$ such that
+\begin{equation}\label{b1}
+ba = e.
+\end{equation}
+Multiplying $a$ on the left side of \eqref{b1} we obtain
+\begin{equation}\label{b2}
+a(ba) = ae.
+\end{equation}
+Applying the associative property of groups from \eqref{b2} we know that
+\begin{equation}\label{b3}
+(ab)a = ae.
+\end{equation}
+Because $e$ is the identity of $G$,
+\begin{equation}\label{b4}
+ae = ea.
+\end{equation}
+Applying the transitive property of equality to \eqref{b3} and \eqref{b4} we obtain
+\begin{equation}\label{b5}
+(ab)a = ea.
+\end{equation}
+Applying the group cancellation law to \eqref{b5} we obtain
+\begin{equation}
+ab = e.
+\end{equation}
+
+In conclusion we have shown that in a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$, then $ab = e$. From the fact that $ab = e$ and $ba = e$ we can conclude that $b$ is the inverse of $a$.
+\end{proof}
+
+(c) Let $f$ and $g$ be functions from a set $S$ to $S$. Let $I$ be the identity function
+on $S$ -- that is $I(x) = x$ for all $x$ in $S$. Show by example that it is possible
+to have $fg = I$, but $f \neq g^{-1}$. Does this violate part (a)? Explain.
+
+Let $f$ and $g$ be functions from the set $\mathbb{C}$ to $\mathbb{C}$ defined as $f(x)=x^2$ and $g(x)=\sqrt{x}$. Now $f\circ g (x) = x$, however $g\circ f (x) = |x|$ and so $f$ is not the inverse of $g$. This fact does not violate what we found in part (a), because this statement applies only to groups and $g$ is not a group.
+
+\end{document}
+
+Guidelines:
+1. The statement of each problem must be written in its entirety, followed by the solution.
+
+2. If you obtain an idea from someone else credit them.
+
+3. Write in complete sentences.
+
+4. Avoid run-ons.
+
+5. Do not begin a sentence with a symbol.
+
+6. As a writer, it is your job to make things clear to the reader. Do not use the words "clearly" or obviously.
+
+7. Proofread. Use a spell-checker and be sure to re-read everything at least two times for accuracy and clarity before submitting.
+
+
+Understand your audience.
+
+Steve Schlicker
