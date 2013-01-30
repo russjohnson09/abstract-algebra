@@ -26,9 +26,9 @@ Problem Set $\#2$\\
 
 {\bf Activity 18.11}\\
 (a) In a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$ must it follow
-that $b = a^{-1}$?
-
-{\bf Conjecture. } In a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$, then $ba = e$ and consequently $b = a^{-1}$.
+that $b = a^{-1}$?\\
+~\\
+{\bf Conjecture.} In a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$, then $ba = e$ and consequently $b = a^{-1}$.
 
 \begin{proof}
 Let $G$ be a group with identity $e$ and let $a,b \in G$ such that
@@ -43,11 +43,7 @@ Applying the associative property of groups from \eqref{12} we know that
 \begin{equation}\label{13}
 a(ba) = ea.
 \end{equation}
-Because $e$ is the identity of $G$,
-\begin{equation}\label{14}
-ea = ae.
-\end{equation}
-Applying the transitive property of equality to \eqref{13} and \eqref{14} we obtain
+Because $e$ is the identity of $G$ we can commute $e$ in \eqref{13} to obtain
 \begin{equation}\label{15}
 a(ba) = ae.
 \end{equation}
@@ -59,10 +55,10 @@ ba = e.
 In conclusion we have shown that in a group $G$ with identity $e$, if $ab = e$ for some $a, b \in G$, then $ba = e$. From the fact that $ab = e$ and $ba = e$ we can conclude that $b$ is the inverse of $a$.
 \end{proof}
 
-(a) In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$ must it follow
-that $b = a^{-1}$?
-
-{\bf Conjecture. } In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$, then $ab = e$ and consequently $b = a^{-1}$.
+(b) In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$ must it follow
+that $b = a^{-1}$?\\
+~\\
+{\bf Conjecture.} In a group $G$ with identity $e$, if $ba = e$ for some $a, b \in G$, then $ab = e$ and consequently $b = a^{-1}$.
 
 \begin{proof}
 Let $G$ be a group with identity $e$ and let $a,b \in G$ such that
@@ -77,11 +73,7 @@ Applying the associative property of groups from \eqref{b2} we know that
 \begin{equation}\label{b3}
 (ab)a = ae.
 \end{equation}
-Because $e$ is the identity of $G$,
-\begin{equation}\label{b4}
-ae = ea.
-\end{equation}
-Applying the transitive property of equality to \eqref{b3} and \eqref{b4} we obtain
+Because $e$ is the identity of $G$ we can commute $e$ in \eqref{b3} to obtain
 \begin{equation}\label{b5}
 (ab)a = ea.
 \end{equation}
@@ -95,19 +87,19 @@ In conclusion we have shown that in a group $G$ with identity $e$, if $ba = e$ f
 
 (c) Let $f$ and $g$ be functions from a set $S$ to $S$. Let $I$ be the identity function
 on $S$ -- that is $I(x) = x$ for all $x$ in $S$. Show by example that it is possible
-to have $fg = I$, but $f \neq g^{-1}$. Does this violate part (a)? Explain.
-
-Let $f$ and $g$ be functions from the set $\mathbb{C}$ to $\mathbb{C}$ defined as $f(x)=x^2$ and $g(x)=\sqrt{x}$. Now $f\circ g (x) = x$, however $g\circ f (x) = |x|$ and so $f$ is not the inverse of $g$. This fact does not violate what we found in part (a), because this statement applies only to groups and $g$ is not a group.
-
+to have $fg = I$, but $f \neq g^{-1}$. Does this violate part (a)? Explain.\\
+~\\
+Let $f$ and $g$ be functions from the set $\mathbb{C}$ to $\mathbb{C}$ defined as $f(x)=x^2$ and $g(x)=\sqrt{x}$. Now $f\circ g (x) = x$, however $g\circ f (x) = |x|$ and so $f$ is not the inverse of $g$. This fact does not violate what we found in part (a), because this statement applies only to groups and $f$ is not in a group. For the function $f$, $f(2) = f(-2) = 4$ and so it cannot have an inverse, because a function would only be able to map $4$ to $2$ or to $-2$ and not both. From this we see that $f$ is not in a group and so what we found in parts (a) and (b) does not apply here.\\
+~\\
 (4) Determine if the set $G$ is a group under the indicated operation. If $G$ is
 a group, verify that each group property is satisfied. If $G$ is not a group,
 provide examples that show which of the group properties are not satisfied.\\
 ~\\
 (a) Let $G$ be the set of odd integers under addition.\\
 ~\\
-The set $G$ is not a group. The identity element for this set must be zero, but zero is not an odd integer. Therefore, $G$ does not have an identity element and is not a group.\\
+The set $G$ is not a group. The identity element for this set must be zero because it is a subset of the integers, but zero is not an odd integer. Therefore, $G$ does not have an identity element and is not a group.\\
 ~\\
-(b) Let $G = {[2], [4], [6], [8]} \subset \mathbb{Z}_{10}$, with the operation of multiplication
+(b) Let $G = \{[2], [4], [6], [8]\} \subset \mathbb{Z}_{10}$, with the operation of multiplication
 of congruence classes.\\
 ~\\
 First we will construct an operation table for this group.
@@ -123,11 +115,11 @@ $
 $
 \end{center}
 ~\\
-From this operation table we see that $a\cdot [6] = [6]\cdot a = a$ for all $a\in G$ and so $[6]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits a $b\in G$ such that $a\cdot b = b\cdot a = [6]$ and so every element has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under multiplication of congruence classes. We already know that multiplication of congruence classes is associative and so it will be associative in $G$.\\
+From this operation table we see that $a\cdot [6] = [6]\cdot a = a$ for all $a\in G$ and so $[6]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits some $b\in G$ such that $a\cdot b = b\cdot a = [6]$ and so every element in $G$ has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under multiplication of congruence classes. We already know that multiplication of congruence classes is associative in the set $\mathbb{Z}_{10}$ and so it will be associative in its subset $G$.\\
 ~\\
 In conclusion, we have shown that the set $G$ has an identity, is closed, is associative, and each element has an inverse under multiplication of congruence classes. Therefore, $G$ is a group under multiplication of congruence classes.\\
 ~\\
-(c) Let $G = {[0], [2], [4], [6], [8]} \subset \mathbb{Z}_{10}$, with the operation of addition of
+(c) Let $G = \{[0], [2], [4], [6], [8]\} \subset \mathbb{Z}_{10}$, with the operation of addition of
 congruence classes.\\
 ~\\
 First we will construct an operation table for this group.
@@ -144,38 +136,38 @@ $
 $
 \end{center}
 ~\\
-From this operation table we see that $a + [0] = [0] + a = a$ for all $a\in G$ and so $[0]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits a $b\in G$ such that $a + b = b + a = [0]$ and so every element has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under addition of congruence classes. We already know that addition of congruence classes is associative and so it will be associative in $G$.\\
+From this operation table we see that $a + [0] = [0] + a = a$ for all $a\in G$ and so $[0]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits some $b\in G$ such that $a + b = b + a = [0]$ and so every element in $G$ has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under addition of congruence classes. We already know that addition of congruence classes is associative in the set $\mathbb{Z}_{10}$ and so it will be associative in its subset $G$.\\
 ~\\
 In conclusion, we have shown that the set $G$ has an identity, is closed, is associative, and each element has an inverse under addition of congruence classes. Therefore, $G$ is a group under addition of congruence classes.\\
 ~\\
 (d) Let  $G = {q \in Q : q \neq 1}$, with the operation $*$ defined by $a * b = a + b - ab$.\\
 ~\\
-First we not that $a * 0 = 0 * a = a$ for all $a\in G$ and so $0$ is the identity element in $G$. We know that integers are associative under addition and this operation can be defined using only addition. Therefore $G$ is associative under the operator $*$. Next we will show that $G$ is closed.
+Let $a\in G$. First we note that $a * 0 = a + 0 - a\cdot 0 = a$ and $0 * a = 0 + a - 0\cdot a = a$ for all $a\in G$ and so $0$ is the identity element in $G$. Let $b\in G$. We know that rational numbers are associative under addition, subtraction, and multiplication and so the operator $*$ will be associative in the set $\mathbb{Q}$. Therefore, $G\subset \mathbb{Q}$ is associative under the operator $*$. Next we will show that $G$ is closed under $*$.
 \begin{proof}
-Let $a,b \in G$ such that
+We will prove that $G$ is closed under $*$ by contradiction. Assume there exist some $a$ and $b$ in $G$ such that
 \begin{equation}\label{21}
 a+b - ab = 1
 \end{equation}
-We are working with integers under addition and subtraction which we now is commutative and associative. We subtract $b$ from \eqref{21} to obtain
+We are working with rational numbers under addition, subtraction, and multiplication and so we can apply some simple algebra. We add the inverse of $b$ in \eqref{21} to obtain
 \begin{equation}\label{22}
-a-ab = 1-b.
+a-ab = 1 + -b.
 \end{equation}
-Factoring out $a$ on the left side of \eqref{22} we obtain
+Applying the distributive property of multiplication over subtraction to \eqref{22} we obtain
 \begin{equation}\label{23}
 a(1-b) = 1-b
 \end{equation}
 From \eqref{22} we can apply the group cancellation law to arrive at the contradiction
 \[a = 1.\]
-From this contradiction, we know that $G$ is closed under the operation $*$. 
+From this contradiction, we know that $G$ is closed under the operator $*$. 
 \end{proof}
 ~\\
-Finally we will show that every element has an inverse. Let $a,b \in G$ such that
+Finally we will show that every element has an inverse. Let $a\in G$. The inverse of $a$ is $b\in G$ such that
 \[b = \dfrac{a}{a-1}.\] The element $b$ is only undefined when $a = 1$ and there is no $a$ such that $b=1$. We can also see that \[a+b-ab = b+a-ba = a + \dfrac{a}{a-1} - \dfrac{a\cdot a}{a-1} = 0.\]
-From this we see that each element $a\in G$ has an inverse and this inverse is $\dfrac{a}{a-1}$.\\
+From this we see that every element in $G$ has an inverse.\\
 ~\\
 In conclusion, we have shown that the set $G$ has an identity, is closed, is associative, and each element has an inverse under the operator $*$. Therefore, $G$ is a group under the operator $*$.\\
 ~\\
-(e) Let $G = {[x] \in \mathbb{Z}_9 : x = 1, 2, 4, 5, 7, \text{ or } 8}$, with the operation $[x] *
+(e) Let $G = \{[x] \in \mathbb{Z}_9 : x = 1, 2, 4, 5, 7, \text{ or } 8\}$, with the operation $[x] *
 [y] = [x][y]$.\\
 ~\\
 First we will construct an operation table.
@@ -193,25 +185,22 @@ $
 $
 \end{center}
 ~\\
-From this operation table we see that $a*[1] = [1]*a = a$ for all $a\in G$ and so $[1]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits a $b\in G$ such that $a*b = b*a = [1]$ and so every element has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under the binary operator $*$. We already know that multiplication of congruence classes is associative and so it will be associative in $G$.\\
+From this operation table we see that $a*[1] = [1]*a = a$ for all $a\in G$ and so $[1]$ is $G$'s identity element. We can also see from the operation table that for all $a \in G$ there exits some $b\in G$ such that $a*b = b*a = [1]$ and so every element has an inverse. There are no elements in the operation table that are not in $G$ and so $G$ is closed under the binary operator $*$. We already know that multiplication of congruence classes is associative in $\mathbb{Z}_9$ and so it will be associative in its subset $G$.\\
 ~\\
 In conclusion, we have shown that the set $G$ has an identity, is closed, is associative, and each element has an inverse under the operator $*$. Therefore, $G$ is a group under the operator $*$.\\
 ~\\
 (7) Let $k$ be an integer, and let $Z(k)$ be the set of integers on which an operation
 $\oplus_k$ is defined as follows:
-$a \oplus_k b = a + b − k$,
-where $a + b$ denotes the standard sum of $a$ and $b$ in $\mathbb{Z}$. Note that the set $Z(0)$
-is the group of integers under the standard addition. For which values of $k$ is
-$Z(k)$ a group under the operation $\oplus_k$?\\
+$a \oplus_k b = a + b - k$, where $a + b$ denotes the standard sum of $a$ and $b$ in $\mathbb{Z}$. Note that the set $Z(0)$ is the group of integers under the standard addition. For which values of $k$ is $Z(k)$ a group under the operation $\oplus_k$?\\
 ~\\
-{\bf Conjecture. } The set $Z(k)$ is a group for all $k\in \mathbb{Z}$.\\
+{\bf Conjecture.} The set $Z(k)$ is a group for all $k\in \mathbb{Z}$.\\
 ~\\
-First of all we note that $a+k-k = k + a -k = a$, and so $k$ is the identity element. This is consistent with the fact that $0$ is the identity element of integers under addition, $Z(0)$. Next we note that the operation $\oplus$ can be defined using only addition and the set of all integers is associative under addition. Therefore $Z(k)$ is associative for all $k\in \mathbb{Z}$. The set of integers are closed under addition and subtraction and so $Z(k)$ is closed under $\oplus_k$, because it consists of only adding and subtracting integers. Finally, every element $a\in Z(k)$ has an inverse. We see that $a + -a -k = -a + a - k = k$ and so the inverse of the arbitrary element $a \in Z(k)$ is $-a$.\\
+First of all we note that $a+k-k = k + a -k = a$, and so $k$ is the identity element. This is consistent with the fact that $0$ is the identity element of integers under addition, $Z(0)$. Next we note that the operation $\oplus$ can be defined using only addition as $a \oplus_k b = a + b + -k$. We already know that the set of integers is associative under addition and so the set of integers is associate under $\oplus_k$ for all $k\in \mathbb{Z}$. The set of integers are closed under addition and subtraction and so $\mathbb{Z}$ is closed under $\oplus_k$, because it consists of only addition and subtraction. Finally, every element $a\in Z(k)$ has an inverse. We see that $a + -a -k = -a + a - k = k$ and so the inverse of the arbitrary element $a \in Z(k)$ is $-a$.\\
 ~\\
 In conclusion, we have shown that $Z(k)$ has an identity element, is associative, is closed, and each element has an inverse for all $k\in \mathbb{Z}$. Therefore $Z(k)$ is a group for all $k\in \mathbb{Z}$.\\
 ~\\
-(8) Prove that a group $G$ is Abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$.
-
+(8) Prove that a group $G$ is Abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$.\\
+~\\
 \begin{proof}
 First we will show that if a group $G$ is Abelian, then $(ab)^2 = a^2 b^2$ for all $a, b \in G$.\\
 ~\\
@@ -258,13 +247,14 @@ In conclusion, we have shown that if a group $G$ is Abelian, then $(ab)^2 = a^2 
 (1) Let $G$ be a group.\\
 (a) Let $a, b, c \in G$. What element is $(abc)^{-1}$ ?\\
 ~\\
-{\bf Conjecture. } The inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
+{\bf Conjecture.} The inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
 
 \begin{proof}
 Let $G$ be a group and let $a, b, c \in G$. First of all, we know that
 \begin{equation}\label{41}
-(abc)(c^{-1}b^{-1}a^{-1}) = (abc)(c^{-1}b^{-1}a^{-1}).
+(abc)(c^{-1}b^{-1}a^{-1}) = (abc)(c^{-1}b^{-1}a^{-1})
 \end{equation}
+from the reflexive property of equality.
 Applying the associative property to \eqref{41} we obtain
 \begin{equation}\label{42}
 (abc)(c^{-1}b^{-1}a^{-1}) = (ab(cc^{-1})(b^{-1}a^{-1}).
@@ -281,13 +271,15 @@ Repeating this process we see that
 \[(abc)(c^{-1}b^{-1}a^{-1}) = a(bb^{-1})a^{-1} = aea^{-1} = aa^{-1} = e.\]
 We can also apply the same rules to show that 
 \[(c^{-1}b^{-1}a^{-1})(abc) = (c^{-1}b^{-1})(bc) = c^{-1}c = e.\]
-And so we have shown that the inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
+In conclusion, we have shown that 
+\[(c^{-1}b^{-1}a^{-1})(abc) = (abc)(c^{-1}b^{-1}a^{-1} = e\]
+and therefore the inverse of $abc$ is $c^{-1}b^{-1}a^{-1}$.
 \end{proof}
 
-(b) Let $m$ be a positive integer, and let $a_1, a2 ,\ldots, a_m$ be elements in $G$.
+(b) Let $m$ be a positive integer, and let $a_1, a_2 ,\ldots, a_m$ be elements in $G$.
 What element is $(a_1 a_2 \cdots a_m )^{-1}$ ?\\
 ~\\
-{\bf Conjecture. } The inverse of $a_1 a_2 \ldots a_m$ is $a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$ for all $m\in\mathbb{Z^+}$.
+{\bf Conjecture.} The inverse of $a_1 a_2 \ldots a_m$ is $a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$ for all $m\in\mathbb{Z^+}$.
 
 \begin{proof}
 We will prove our conjecture using induction. First we note that for $m=1$ we have $a_1^{-1} = a_1^{-1}$ and for $m=2$ we have $(a_1a_2)^{-1} = a_2^{-1}a_1^{-1}$. The equation for $m=1$ is self-evident. For $m=2$ we see that
@@ -296,7 +288,9 @@ and
 \[(a_2^{-1}a_1^{-1})(a_1a_2) = a_2^{-1}(a_1^{-1}a_1)a_2 = a_2^{-1}ea_2 = a_2^{-1}a_2 = e.\]
 And so, for $m=2$ the conjecture is true.
 ~\\
-For the next part of the proof we will show that if $m$ is true, then $m+1$ is also true. To do this we will show that 
+For the next part of the proof we will show that
+\[(a_1 a_2 \ldots a_m)^{-1} = a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1} \]
+implies that
 \[(a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = e\]
 and
 \[(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1})(a_1 a_2 \ldots a_m a_{m+1}) = e\]
@@ -312,16 +306,16 @@ Multiplying out $a_{m+1}a_{m+1}^{-1}$ in \eqref{52} we obtain
 \begin{equation}\label{53}
 (a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = (a_1 a_2 \ldots a_m)( a_m^{-1}\ldots a_1^{-1}).
 \end{equation}
-We already know that 
+We know that
 \begin{equation}\label{54}
-(a_1 a_2 \ldots a_m)( a_m^{-1}\ldots a_1^{-1}) = e.
+(a_1 a_2 \ldots a_m)( a_m^{-1}\ldots a_1^{-1}) = e
 \end{equation}
 from the hypothesis of the inductive proof. Applying the transitive property of equality to \eqref{53} and \eqref{54} we obtain
 \begin{equation}
 (a_1 a_2 \ldots a_m a_{m+1})(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1}) = e.
 \end{equation}
 In a similar manner we can show that
-\[(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1})(a_1 a_2 \ldots a_m a_{m+1}) = e. \]
+\[(a_{m+1}^{-1} a_m^{-1}\ldots a_1^{-1})(a_1 a_2 \ldots a_m a_{m+1}) = a_{m+1}^{-1}ea_{m+1} =  a_{m+1}^{-1}a_{m+1} = e. \]
 
 From this we see can conclude that the inverse of $a_1 a_2 \ldots a_m$ is $a_m^{-1}a_{m-1}^{-1}\ldots a_1^{-1}$ for all $m\in\mathbb{Z^+}$.
 
@@ -335,6 +329,7 @@ Let $G$ be a group with identity $e$ such that $a^2 = e$ for all $a\in G$. Let $
 \begin{equation}\label{61}
 (ab)(ab) = e.
 \end{equation}
+from the fact that $G$ must be closed under its operation and so $ab\in G$. 
 Multiplying $a$ on the left side of \eqref{61} we obtain
 \begin{equation}\label{62}
 a(ab)(ab) = ae.
@@ -368,23 +363,3 @@ In conclusion we have shown that $G$ is Abelian.
 The converse of the statement in problem 2 is not true. For example we have the Abelian group $(\mathbb{Z},+)$. In this group $2+2 \neq 0$ and so being an Abelian group does not guarantee that for every element $a$ in the group with identity $e$, $a^2 = e$.
 
 \end{document}
-
-Guidelines:
-1. The statement of each problem must be written in its entirety, followed by the solution.
-
-2. If you obtain an idea from someone else credit them.
-
-3. Write in complete sentences.
-
-4. Avoid run-ons.
-
-5. Do not begin a sentence with a symbol.
-
-6. As a writer, it is your job to make things clear to the reader. Do not use the words "clearly" or obviously.
-
-7. Proofread. Use a spell-checker and be sure to re-read everything at least two times for accuracy and clarity before submitting.
-
-
-Understand your audience.
-
-Steve Schlicker
