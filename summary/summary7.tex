@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{enumitem}
+
+\begin{document}
+\begin{flushright}
+Russ Johnson\\
+Reading Assignment 7\\
+\today\\
+\end{flushright}
+~\\
+~\\
+
+Part (i) in Theorem 21.2 makes sense intuitively after we have proven that there must exist some $k\in\mathbb{Z}^+$ such that $a^k=e$. We could think of the reason for this being true in the following manner. At some point the element $a$ cycles around to itself meaning that $a^i = a$ for some $i\in\mathbb{Z}^+$. Right before this we are at the element $a^n$ in the cycle where $n$ is element $a$'s order. This is because every element after this one is a repeat of the first cycle and so it will not increase the elements order. So, the entire cycle for $a$ is the set $\{a^1,a^2,a^n\}$. After $a^n$, we repeat the cycle and so $a^{n+1} = a$ and if multiply this equation by $a^{-1}$ on the right side we obtain $a^n = e$. If there were a positive integer $j$ less than $n$ for which $a^j = a$, the magnitude would have to be less than $n$.\\
+~\\
+For part (ii) we know that $a^{n\cdot 1} = e$. Using proof by induction we assume that $a^{nm} = e$ for some positive integer $m$ and we can show that $a^{n(m+1)}$ via  $a^{n(m+1)} = a^{nm}a^n = e^2 = e$.
+~\\
+
+\end{document}
+
+Question:\\
+For the second proof by contradiction for Theorem 21.2 it seems like the contradiction part can be gotten rid of and we will still obtain the same result.\\
+~\\
+Let $\t\in\mathbb{Z}$. By the Division Algorithm, there are integers $q$ and $r$ such that
+\[t = qk + r \text{~~~~with~~} 0\leq r < k. \]
+Then
+\[a^t=a^{qk+r} = (a^k)^qa^r = e^qa^r.\]
+So any power of $a$ is equal to $a^r$ for some $0\leq r < k$. This means that there are at most $k$ distinct powers of $a$. There are also no fewer than $k$ distinct powers of $a$, because this would contradict the fact that there are $n$ distinct powers of $a$. We also know that there are at least $n$ distinct powers $|\langle a \rangle| = n $
