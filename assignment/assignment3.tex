@@ -306,7 +306,52 @@ This is a property of the operator of $G$ and therefore it will also be true for
 ~\\
 (d) If $H$ is Abelian, then $G$ is Abelian.\\
 ~\\
-This is not always true. For example, we have the group $G$ containing the symmetries of a square with the subgroup $H$ containing only its identity. In this case $H$ is Abelian, but $G$ is not.
+This is not always true. For example, we have the group $G$ containing the symmetries of a square with the subgroup $H$ containing only its identity. In this case $H$ is Abelian, but $G$ is not.\\
+~\\
+(8) {\bf Intersections of subgroups.} Let $G$ be a group with subgroups $H$ and $K$.\\
+(a) Is $H \cap K$ a subgroup of $G$? Prove your answer.\\
+{\bf Conjecture.} Let $G$ be a group with subgroups $H$ and $K$. Then $H \cap K$ is a subgroup of $G$.
+\begin{proof}
+Let $G$ be a group with identity $e$ and let $H$ and $K$ be subgroups of $G$. We know from the fact that $H$ and $K$ are subgroups of $G$ that $e\in H$ and $e\in K$, and so $e\in H\cap K$. Next, let $a,b\in H\cap K$. From the definition of intersection of sets we know that $a,b\in H$ and $a,b\in K$. Because $H$ and $K$ are groups, $ab\in H$ and $ab\in K$. Therefore $ab\in H\cap K$, coming from the definition of intersection. From this we have shown that $H\cap K$ are closed under the operation of $G$. Finally let $x\in H\cap K$. From the definition of intersection of sets we know that $x\in H$ and $x\in K$. Because $H$ and $K$ are groups, $x^{-1}\in H$ and $x^{-1}\in K$. Therefore $x^{-1}\in H\cap K$, coming from the definition of intersection of sets.\\
+~\\
+In conclusion, we have shown that the identity of $G$ is in $H\cap K$, the set $H\cap K$ is closed under the operation of $G$, and each element in $H\cap K$ has an inverse in $H\cap K$. Therefore, $H\cap K$ is a subgroup of $G$.
+\end{proof}
+~\\
+(b) Can we generalize? That is, if ${H_\alpha}$ is a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$, is it the case that $\cap_{\alpha\in I} H_\alpha$ is a subgroup of $G$? Prove your answer.
+{\bf Conjecture.} Let $G$ be a group and let ${H_\alpha}$ be a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$. Then $\cap_{\alpha\in I} H_\alpha$ is a subgroup of G.
 
+\begin{proof}
+We will prove this by induction. First of all we already know that this is true when $|I|=2$ from part 
+\end{proof}
+~\\
+(12) Determine whether $H$ is a subgroup of $G$.
+(a) $G=\mathbb{Z}_{20}$ under addition, $H=\{[0],[3],[6],[9],[12],[15],[18]\}$.\\
+The inverse of $[3]$ is $[17]$ which is not in $H$. Therefore $H$ is not a subgroup of $G$.\\
+~\\
+(b) $G=U_7$ under multiplication, $H=\{[1],[2],[4]\}$.\\
+First of all, the identity $[1]$ is in $H$. Now we will construct an operation table to see if $H$ is closed under multiplication and each element of $H$ has an inverse.
+\[
+\begin{array}{c|c|c|c}
+\cdot & [1] & [2] & [4]\\\hline
+[1] & [1] & [2] & [4]\\\hline
+[2] & [2] & [4] & [1]\\\hline
+[4] & [4] & [1] & [2]
+\end{array}
+\]
+From this operation table we see that $H$ is closed under multiplication and each element of $H$ has an inverse. And so, we can conclude that $H$ is a subgroup of $G$.\\
+~\\
+(c) $G=U_{16}$ and $H=\{[1],[7],[9],[15]\}$.\\
+~\\
+First of all, the identity $[1]$ is in $H$. Now we will construct an operation table to see if $H$ is closed under multiplication and each element of $H$ has an inverse.
+\[
+\begin{array}{c|c|c|c|c}
+\cdot & [1] & [7] & [9] & [15] \\\hline
+[1] & [1] & [7] & [9] & [15]\\ \hline
+[7] & [7] & [1] & [15] & [19] \\ \hline
+[9] & [9] & [15] & [1] & [7] \\ \hline
+[15] & [15] & [9] & [7] & [1]
+\end{array} 
+\]
+From this operation table we see that $H$ is closed under multiplication and each element of $H$ has an inverse. And so, we can conclude that $H$ is a subgroup of $G$.\\
 
 \end{document}
