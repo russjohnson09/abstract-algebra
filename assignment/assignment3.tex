@@ -249,7 +249,64 @@ order, then $a^{-1}$ has infinite order.
 \begin{proof}
 Assume to the contrary that $a$ has infinite order, but $a^{-1}$ does not.
 \end{proof}
-
+~\\
+(3) Let $H$ denote the set of all $2 \times 2$ matrices of the form
+\[\begin{bmatrix}
+x&0\\
+y&0
+\end{bmatrix}\]
+where $x,y\in\mathbb{R}$. Is $H$ a subgroup of $\mathcal{M}_{2\times 2}(\mathbb{R})$?\\
+~\\
+{\bf Conjecture.} The set $H$ is a subgroup of $\mathcal{M}_{2\times 2}(\mathbb{R})$.
+\begin{proof}
+First of all, the identity of $\mathcal{M}_{2\times 2}(\mathbb{R})$ under addition is $\begin{bmatrix}
+0&0\\
+0&0
+\end{bmatrix}$ and this is in $H$. Next, let $a,b,c,d\in\mathbb{R}$. Then $\begin{bmatrix}
+a&0\\
+b&0
+\end{bmatrix}$
+and $\begin{bmatrix}
+c&0\\
+d&0
+\end{bmatrix}$ are both in $H$. When we add these two matrices together we get
+\[\begin{bmatrix}
+a&0\\
+b&0
+\end{bmatrix} + 
+\begin{bmatrix}
+a&0\\
+b&0
+\end{bmatrix} =
+\begin{bmatrix}
+a+c&0\\
+b+d&0
+\end{bmatrix}.
+\]
+Because the reals are closed under addition, we know that both $a+c$ and $b+d$ are in $\mathbb{R}$. Therefore, $\begin{bmatrix}
+a+c&0\\
+b+d&0
+\end{bmatrix}$ is in $H$ and from this we can conclude that $H$ is closed under addition. Finally let $x,y\in\mathbb{R}$. The inverses of $x$ and $y$ are also in $\mathbb{R}$ and so both
+$\begin{bmatrix}x&0\\y&0\end{bmatrix}$ and $\begin{bmatrix}-x&0\\-y&0\end{bmatrix}$ are in $H$. We also see that
+\[\begin{bmatrix}x&0\\y&0\end{bmatrix}+\begin{bmatrix}-x&0\\-y&0\end{bmatrix}=\begin{bmatrix}0&0\\0&0\end{bmatrix}.\] From this, we can conclude that every element in $H$ has an inverse. In conclusion, we have shown that the the subset $H$ of $\mathcal{M}_{2\times 2}(\mathbb{R})$ is closed under addition, the identity of $\mathcal{M}_{2\times 2}(\mathbb{R})$ under addition is in $H$, and every element of $H$ has an inverse. From this we have shown that $H$ is a subgroup of $\mathcal{M}_{2\times 2}(\mathbb{R})$ under addition.
+\end{proof}
+~\\
+(4) Let $G$ be a group and $H$ a subgroup of $G$. Which of the following conjectures do you think are true, and which do you think are false? Provide brief arguments or examples to justify your answers.\\
+(a) If $G$ is finite, then $H$ is finite.\\
+~\\
+This statement is true due to the fact that $H$ is a subset of $G$ and must therefore cannot have a magnitude greater than its superset $G$.\\
+~\\
+(b) If $H$ is finite, then $G$ is finite.\\
+~\\
+This is not necessarily true. For example, $\{0\}$ is a subgroup of $\mathbb{Z}$ under addition. In this case $H$ is finite, but $G$ is infinite.\\
+~\\
+(c) If $G$ is Abelian, then $H$ is Abelian.\\
+~\\
+This is a property of the operator of $G$ and therefore it will also be true for $H$ whose elements are all in $G$.\\
+~\\
+(d) If $H$ is Abelian, then $G$ is Abelian.\\
+~\\
+This is not always true. For example, we have the group $G$ containing the symmetries of a square with the subgroup $H$ containing only its identity. In this case $H$ is Abelian, but $G$ is not.
 
 
 \end{document}
