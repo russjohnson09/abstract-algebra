@@ -38,7 +38,7 @@ for all $x\in\mathbb{R}$.
 ~\\
 For this proof we will first show that $\mathcal{F}(\mathbb{R})$ is closed under addition, that addition is associative in $\mathcal{F}(\mathbb{R})$, that $\mathcal{F}(\mathbb{R})$ contains an identity element, and that each element in $\mathcal{F}(\mathbb{R})$ has an inverse. Finally, we will show that addition is commutative in $\mathcal{F}(\mathbb{R})$.\\
 ~\\
-First of all, from the definition of addition in $\mathcal{F}(\mathbb{R})$ we see that this operation will always give us another function in $\mathcal{F}(\mathbb{R})$. Therefore, $\mathcal{F}(\mathbb{R})$ is closed under addition. Next we will prove that  addition is associative in $\mathcal{F}(\mathbb{R})$.
+First of all, from the definition of addition in $\mathcal{F}(\mathbb{R})$ we see that this operation will always give us another function from the reals to the reals which is an element in $\mathcal{F}(\mathbb{R})$. Therefore, $\mathcal{F}(\mathbb{R})$ is closed under addition. Next, we will prove that  addition is associative in $\mathcal{F}(\mathbb{R})$.
 \begin{proof}
 Let $f,g,h\in\mathcal{F}(\mathbb{R})$ and let $x\in\mathbb{R}$. From the definition of addition in $\mathcal{F}(\mathbb{R})$ we know that
 \begin{equation}\label{151}
@@ -60,11 +60,11 @@ and
 h(x) \in \mathbb{R}
 \end{equation}
 from the fact that the codomain of $f,g,$ and $h$ is $\mathbb{R}$.
-We already know that the addition is associative in $\mathbb{R}$. From this fact and the equations \eqref{153}, \eqref{154}, and \eqref{155}. We know that
+We already know that addition is associative in $\mathbb{R}$. From this fact and the equations \eqref{153}, \eqref{154}, and \eqref{155} we also know that
 \begin{equation}\label{156}
 (f(x)+g(x))+h(x) = f(x)+(g(x)+h(x)).
 \end{equation}
-From applying the transitive property of equality to \eqref{156} and \eqref{151}, we obtain
+Applying the transitive property of equality to \eqref{156} and \eqref{151}, we obtain
 \begin{equation}\label{157}
 ((f+g)+h)(x) = f(x)+(g(x)+h(x)).
 \end{equation}
@@ -80,16 +80,17 @@ Let $e\in\mathcal{F}(\mathbb{R})$ such that
 \begin{equation}
 e(x) = 0
 \end{equation}
-for all $x\in\mathbb{R}$. Let $f\in\mathcal{F}(\mathbb{R})$. We see that
-\[(f+e)(x) = f(x)+e(x)=f(x)+0=f(x)\]
+for all $x\in\mathbb{R}$. Let $f\in\mathcal{F}(\mathbb{R})$ and $a\in\mathbb{R}$. We see that
+\[(f+e)(a) = f(a)+e(a)=f(a)+0=f(a)\]
 and
-\[(e+f)(x) = e(x)+f(x)=0+f(x)=f(x).\]
-In conclusion, we have shown that $(f+e)(x)=(e+f)(x)=f(x)$ for all $x\in\mathbb{R}$ and therefore $e$ is the identity element in $\mathcal{F}(\mathbb{R})$.
+\[(e+f)(a) = e(a)+f(a)=0+f(a)=f(a).\]
+In conclusion, we have shown that $(f+e)(a)=(e+f)(a)=f(a)$ for some $a\in\mathbb{R}$ and therefore the function $e$ defined $e(x)=0$ for all $x\in\mathbb{R}$ is the identity element in $\mathcal{F}(\mathbb{R})$.
 \end{proof}
 Next will show that each function in $\mathcal{F}(\mathbb{R})$ has an inverse under addition.
 \begin{proof}
-Let $f\in\mathcal{F}(\mathbb{R})$ and let $x\in\mathbb{R}$. First we note that $(f-f)(x)=f(x)-f(x)=0$ coming from the fact that $f(x)\in\mathbb{R}$ and each element in $\mathbb{R}$ has an inverse under addition. We know that  for a We know that $\mathbb{R}$ is a group under addition. Therefore each element in $\mathbb{R}$ has an inverse
-Let $f\in\mathcal{F}(\mathbb{R})$ and let $g\in\mathcal{F}(\mathbb{R})$ such that 
+Let $f\in\mathcal{F}(\mathbb{R})$ and let $x\in\mathbb{R}$. First we note that $f(x)\in\mathbb{R}$. Because the reals are a group under addition we know that there exits some $g\in\mathcal{F}(\mathbb{R})$ such that $f(x)+g(x)=0$ and $g(x)+f(x)=0$. Therefore, the arbitrary element $f\in\mathcal{F}(\mathbb{R})$ has an inverse.\\
+~\\
+In conclusion we have shown that every element in $\mathcal{F}(\mathbb{R})$ has an inverse.
 \end{proof}
 Finally, we will show that every element in $\mathcal{F}(\mathbb{R})$ commutes under addition.
 \begin{proof}
@@ -129,10 +130,10 @@ In conclusion, we have shown that $\mathcal{F}(\mathbb{R})$ is closed under addi
 Yes, let $e\in\mathcal{F}(\mathbb{R})$ such that
 \[e(x)=1\]
 for all $x\in\mathbb{R}$. Let $f\in\mathcal{F}(\mathbb{R})$ and let $a\in\mathbb{R}$. We see that
-\[(fe)=f(a)e(a)=f(a)\cdot 1=f(a)\]
+\[(fe)(a)=f(a)e(a)=f(a)\cdot 1=f(a)\]
 and
-\[(ef)=e(a)f(a)=1\cdot f(a)=f(a).\]
-Therefore $e$ is the identity in $\mathcal{F}(\mathbb{R})$ under multiplication.\\
+\[(ef)(a)=e(a)f(a)=1\cdot f(a)=f(a).\]
+Therefore, $e$ is the identity in $\mathcal{F}(\mathbb{R})$ under multiplication.\\
 ~\\
 (c) Find an element in $\mathcal{F}(\mathbb{R})$ that does not have a multiplicative inverse in $\mathcal{F}(\mathbb{R})$. Explain how this shows $\mathcal{F}(\mathbb{R})$ is not a group under multiplication.\\
 ~\\
@@ -140,20 +141,25 @@ Let $f\in\mathcal{F}(\mathbb{R})$ such that
 \[f(x)=0\]
 for all $x\in\mathbb{R}$. Let $g\in\mathcal{F}(\mathbb{R})$ and let $a\in\mathbb{R}$. We see that
 \[(fg)(a)=0\cdot g(a)=0\neq 1.\]
-And from this we can conclude that the function $f$ has no inverse.\\
+And from this we can conclude that the function $f$ defined as $f(x)=0$ for all $x\in\mathbb{R}$ has no inverse. Because a group must have an inverse for every element and $f$ is an element in $\mathcal{F}(\mathbb{R})$, $\mathcal{F}(\mathbb{R})$ is not a group under multiplication.\\
 ~\\
 (d) Find necessary and sufficient conditions for an element in $\mathcal{F}(\mathbb{R})$ to be a unit in $\mathcal{F}(\mathbb{R})$. State your result in a lemma of the form ``The function $f\in\mathcal{F}(\mathbb{R})$ is a unit in $\mathcal{F}(\mathbb{R})$ if and only if ...''. Your lemma must say something more than just a rehash of the definition of a unit; rather, it must actually characterize the functions that are invertible under multiplication in $\mathcal{F}(\mathbb{R})$.\\
 ~\\
 {\bf Conjecture.} An element in $\mathcal{F}(\mathbb{R})$ is a unit if and only if $f(x)\neq 0$ for all $x\in\mathbb{R}$.\\
 ~\\
-First we will show that an if $f$ is a function in $\mathcal{F}(\mathbb{R})$ such that $f(x)\neq 0$ for all $x\in\mathbb{R}$, then $f$ is a unit.
+First we will show that if $f$ is a function in $\mathcal{F}(\mathbb{R})$ such that $f(x)\neq 0$ for all $x\in\mathbb{R}$, then $f$ is a unit.
 \begin{proof}
-Let $f$ be a function in $\mathcal{F}(\mathbb{R})$ such that $f(x)\neq 0$ for all $x\in\mathbb{R}$. There exists some $g$ in $\mathcal{F}(\mathbb{R})$ such that $(fg)(x) = (gf)(x)= 1$ for all $x\in\mathbb{R}$. Let $a\in\mathbb{R}$. Let $g$ be a function in $\mathcal{F}(\mathbb{R})$ such that $f(a)g(a) = 1$.
+Let $f$ be a function in $\mathcal{F}(\mathbb{R})$ such that $f(x)\neq 0$ for all $x\in\mathbb{R}$ and let $a\in\mathbb{R}$. Because the set $\mathbb{R}-\{0\}$ is a group under multiplication and $f(x)$ is in this group we know that there exists some $g$ in $\mathcal{F}(\mathbb{R})$ such that $f(x)g(x)=1$ and $g(x)f(x)=1$. From this we see that $f$ has an inverse in $\mathcal{F}(\mathbb{R})$.
+\end{proof}
+Next we will show that if $f$ is a unit, then it must be true that $f(x)\neq 0$ for all $x\in\mathbb{R}$.
+\begin{proof}
+We assume to the contrary that $f$ is a unit in $\mathcal{F}(\mathbb{R})$ such that there exists some $a\in\mathbb{R}$ such that $f(a)=0$. Because $f$ is a unit, there must exist some $g$ in $\mathcal{F}(\mathbb{R})$ such that $g(x)f(x)=1$ for all $x\in\mathbb{R}$. This implies that there exists a real number $g(a)$ such that $g(a)\cdot 0 =1$. This is a contradiction and so it must be necessary for $f(x)\neq 0$ for all $x\in\mathbb{R}$ in order for $f$ to be a unit.
 \end{proof}
 ~\\
 {\bf Activity 20.12.} In this activity, we will explore a simple relationship between the order of a group element and the order of its inverse.\\
-(a) Determine the order of $[2]$ in $\mathbb{Z}_6$ . What is the inverse of $[2]$ in $\mathbb{Z}_6$ ? Directly
-compute the order of the inverse of $[2]$ in $\mathbb{Z}_6$ . What do you notice?\\
+~\\
+(a) Determine the order of $[2]$ in $\mathbb{Z}_6$. What is the inverse of $[2]$ in $\mathbb{Z}_6$? Directly
+compute the order of the inverse of $[2]$ in $\mathbb{Z}_6$. What do you notice?\\
 ~\\
 First of all, we note that $\langle [2] \rangle = \{[0],[2],[4]\}$. The magnitude of this set is $3$ and therefore the order of $[2]$ in $\mathbb{Z}_6$ is $3$. The inverse of $[2]$ is $[4]$, ($[2]+[4]=[0]$). The order of $[4]$ in $\mathbb{Z}_6$ is equal to the magnitude of $\langle [4] \rangle = \{[0],[2],[4]\}$, and so the order of $[4]$ is $3$. The sets $\langle [2] \rangle$ and $\langle [4] \rangle$ are equal and therefore the orders $[2]$ and $[4]$ must be equal as well.\\
 ~\\
@@ -164,7 +170,7 @@ First of all, we note that $\langle [2] \rangle = \{[0],[2],[4]\}$. The magnitud
 \end{pmatrix}
 $in the group $D_4$ of symmetries of a square. What is the inverse of $\alpha$ in $D_4$ ? Directly compute the order of the inverse of $\alpha$ in $D_4$ . What do you notice?\\
 ~\\
-First of all, we note that \[\langle \alpha \rangle = \{
+First of all, we note that \[\langle \alpha \rangle = \left\{
 \begin{pmatrix}
 1&2&3&4\\
 2&3&4&1
@@ -181,13 +187,13 @@ First of all, we note that \[\langle \alpha \rangle = \{
 1&2&3&4\\
 1&2&3&4
 \end{pmatrix}
-\}.\] From this we see that the magnitude of $\alpha$ is $4$. The inverse of $\alpha$ is $\begin{pmatrix}
+\right\}.\] From this we see that the magnitude of $\alpha$ is $4$. The inverse of $\alpha$ is $\begin{pmatrix}
 1&2&3&4\\
 4&1&2&3
 \end{pmatrix}
 $. The cyclic group generated by $\alpha^{-1}$ is 
 \[
-\begin{pmatrix}
+\left\{\begin{pmatrix}
 1&2&3&4\\
 2&3&4&1
 \end{pmatrix},
@@ -203,7 +209,7 @@ $. The cyclic group generated by $\alpha^{-1}$ is
 1&2&3&4\\
 1&2&3&4
 \end{pmatrix}
-\}.\]
+\right\}.\]
 There the order of $\alpha^{-1}$ is $4$. Again, this is equal to $\alpha$.\\
 ~\\
 (c) Based on your observations in parts (a) and (b), what relationship do you
@@ -235,19 +241,30 @@ and $|a^{-1}|$ in part (c).\\
 ~\\
 {\bf Conjecture.}  Let $G$ be a group with identity $e$ with element $a$ of finite order. The order of $a$ is equal to the order of $a^{-1}$.
 \begin{proof}
-Assume to the contrary that $|a|>|a^{-1}|$. We know that $\langle a \rangle$ contains $e$ and so there must exist some positive integer $n$ such that
+We know that $\langle a \rangle$ contains $e$ and so there must exist some positive integer $n$ such that
 \begin{equation}\label{20e1}
 a^n = e.
 \end{equation}
-Let $S=\{x\in\mathbb{Z}^+:a^x=e\}$. From \eqref{20e1} we now that $S$ is not empty. Therefore from the Axiom of Choice we will choose $k$ to be the 
-From the Axiom of Choice we know that there must exist some least value $k\in S$. 
+Let $S=\{x\in\mathbb{Z}^+:a^x=e\}$. From \eqref{20e1} we know that $S$ is not empty. Therefore, from the Axiom of Choice we are able to choose the a smallest element $k\in S$. The set $\{a,a^2,\ldots,a^k\}$ is equal to the set $\langle a \rangle$ (it contains $a$ and all of the elements up to $e$) and so the order of $a$ is $k$. From part (d) we know that $(a^{-1})^k=e$ and so $|a^{-1}|\leq |a|$.\\
+~\\
+We also know that $\langle a^{-1} \rangle$ contains $e$ and so there must exist some positive integer $m$ such that
+\begin{equation}\label{20e2}
+(a^{-1})^m = e.
+\end{equation}
+Let $T=\{x\in\mathbb{Z}^+:((a)^{-1})^x=e\}$. From \eqref{20e2} we know that $T$ is not empty. Therefore, from the Axiom of Choice we are able to choose the a smallest element $p\in T$. The set $\{a^{-1},(a^{-1})^2,\ldots,(a^{-1})p\}$ is equal to the set $\langle a^{-1} \rangle$ (it contains $a^{-1}$ and all of the elements up to $e$) and so the order of $a^{-1}$ is $p$. From part (d) we know that $a^p=e$ and so $|a|\leq |a^{-1}|$.\\
+~\\
+In conclusion we have shown that the order of $a$ is less than or equal to the order of $a^{-1}$ and the order of $a^{-1}$ is less than or equal to the order of $a$. Therefore, the order of $a$ and the order of $a^{-1}$ is equal.
 \end{proof}
 
 (f) Let $G$ be a group with identity $e$, and let $a \in G$. Prove that if $a$ has infinite
 order, then $a^{-1}$ has infinite order.
 
 \begin{proof}
-Assume to the contrary that $a$ has infinite order, but $a^{-1}$ does not.
+Assume to the contrary that $a$ has infinite order, but $a^{-1}$ does not. Because the order of $a^{-1}$ is finite there must exist some $n\in\mathbb{Z}^+$ such that
+\begin{equation}\label{f1}
+|a^{-1}| < n
+\end{equation}
+The inverse of $a^n$ is $(a^{-1})^n$, but because the order of $(a^{-1}$ is less than $n$ there must exist some $k<n$ such that $(a^{-1})^n=(a^{-1})^k$. But this would mean that $(a^{-1})^k$ has two inverses, $a^k$ and $a^n$. This is a contradiction and so $a^{-1}$ has infinite order.
 \end{proof}
 ~\\
 (3) Let $H$ denote the set of all $2 \times 2$ matrices of the form
@@ -262,7 +279,7 @@ where $x,y\in\mathbb{R}$. Is $H$ a subgroup of $\mathcal{M}_{2\times 2}(\mathbb{
 First of all, the identity of $\mathcal{M}_{2\times 2}(\mathbb{R})$ under addition is $\begin{bmatrix}
 0&0\\
 0&0
-\end{bmatrix}$ and this is in $H$. Next, let $a,b,c,d\in\mathbb{R}$. Then $\begin{bmatrix}
+\end{bmatrix}$ and this is in $H$ ($x=0,y=0$). Next, let $a,b,c,d\in\mathbb{R}$. Then $\begin{bmatrix}
 a&0\\
 b&0
 \end{bmatrix}$
@@ -294,7 +311,7 @@ $\begin{bmatrix}x&0\\y&0\end{bmatrix}$ and $\begin{bmatrix}-x&0\\-y&0\end{bmatri
 (4) Let $G$ be a group and $H$ a subgroup of $G$. Which of the following conjectures do you think are true, and which do you think are false? Provide brief arguments or examples to justify your answers.\\
 (a) If $G$ is finite, then $H$ is finite.\\
 ~\\
-This statement is true due to the fact that $H$ is a subset of $G$ and must therefore cannot have a magnitude greater than its superset $G$.\\
+This statement is true due to the fact that $H$ is a subset of $G$ and therefore cannot have a magnitude greater than its superset $G$.\\
 ~\\
 (b) If $H$ is finite, then $G$ is finite.\\
 ~\\
@@ -310,6 +327,7 @@ This is not always true. For example, we have the group $G$ containing the symme
 ~\\
 (8) {\bf Intersections of subgroups.} Let $G$ be a group with subgroups $H$ and $K$.\\
 (a) Is $H \cap K$ a subgroup of $G$? Prove your answer.\\
+~\\
 {\bf Conjecture.} Let $G$ be a group with subgroups $H$ and $K$. Then $H \cap K$ is a subgroup of $G$.
 \begin{proof}
 Let $G$ be a group with identity $e$ and let $H$ and $K$ be subgroups of $G$. We know from the fact that $H$ and $K$ are subgroups of $G$ that $e\in H$ and $e\in K$, and so $e\in H\cap K$. Next, let $a,b\in H\cap K$. From the definition of intersection of sets we know that $a,b\in H$ and $a,b\in K$. Because $H$ and $K$ are groups, $ab\in H$ and $ab\in K$. Therefore $ab\in H\cap K$, coming from the definition of intersection. From this we have shown that $H\cap K$ are closed under the operation of $G$. Finally let $x\in H\cap K$. From the definition of intersection of sets we know that $x\in H$ and $x\in K$. Because $H$ and $K$ are groups, $x^{-1}\in H$ and $x^{-1}\in K$. Therefore $x^{-1}\in H\cap K$, coming from the definition of intersection of sets.\\
@@ -317,18 +335,21 @@ Let $G$ be a group with identity $e$ and let $H$ and $K$ be subgroups of $G$. We
 In conclusion, we have shown that the identity of $G$ is in $H\cap K$, the set $H\cap K$ is closed under the operation of $G$, and each element in $H\cap K$ has an inverse in $H\cap K$. Therefore, $H\cap K$ is a subgroup of $G$.
 \end{proof}
 ~\\
-(b) Can we generalize? That is, if ${H_\alpha}$ is a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$, is it the case that $\cap_{\alpha\in I} H_\alpha$ is a subgroup of $G$? Prove your answer.
+(b) Can we generalize? That is, if ${H_\alpha}$ is a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$, is it the case that $\cap_{\alpha\in I} H_\alpha$ is a subgroup of $G$? Prove your answer.\\
+~\\
 {\bf Conjecture.} Let $G$ be a group and let ${H_\alpha}$ be a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$. Then $\cap_{\alpha\in I} H_\alpha$ is a subgroup of G.
 
 \begin{proof}
-We will prove this by induction. First of all we already know that this is true when $|I|=2$ from part 
+We will prove this by induction. Let ${H_\alpha}$ be a collection of subgroups of $G$ indexed by $\alpha$ in an indexing set $I$ with $|I|=1$. In this case, $\cap_{\alpha\in I} H_\alpha = H_1$ where $H_1$ is the one and only element in the collection ${H_\alpha}$. We already know that $H_1$ is a subgroup of $G$ and so $\cap_{\alpha\in I} H_\alpha$ is a subgroup of $G$. For the next step in the induction proof we must show that if $\cap_{\alpha\in I} H_\alpha$ is a subgroup of 
 \end{proof}
 ~\\
-(12) Determine whether $H$ is a subgroup of $G$.
+(12) Determine whether $H$ is a subgroup of $G$.\\
 (a) $G=\mathbb{Z}_{20}$ under addition, $H=\{[0],[3],[6],[9],[12],[15],[18]\}$.\\
+~\\
 The inverse of $[3]$ is $[17]$ which is not in $H$. Therefore $H$ is not a subgroup of $G$.\\
 ~\\
 (b) $G=U_7$ under multiplication, $H=\{[1],[2],[4]\}$.\\
+~\\
 First of all, the identity $[1]$ is in $H$. Now we will construct an operation table to see if $H$ is closed under multiplication and each element of $H$ has an inverse.
 \[
 \begin{array}{c|c|c|c}
