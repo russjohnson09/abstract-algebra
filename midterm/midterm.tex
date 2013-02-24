@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+\usepackage{verbatim}
+
+\usepackage{hyperref}
+
+
+%no paragraph indent
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+\begin{flushright}
+Russ Johnson\\
+Problem Set $\#1$\\
+\today\\
+\end{flushright}
+
+{\bf 1.}\\
+Let $H$ be a non-empty subset of a group $G$ with identity $e$.\\
+{\bf Conjecture.} $H$ is a subgroup of $G$ if and only if whenever $h$ and $k$ are in $H$, then $h^{-1}k$ is in $H$.\\
+~\\
+We will first prove that $H$ is a subgroup of $G$ with identity $e$ if whenever $h$ and $k$ are in $H$, then $h^{-1}k$ is in $H$.
+\begin{proof}
+Let $a\in H$. Because $a\in H$ we now that $a^{-1}a$ is also in $H$ and coming from the fact that $a^{-1}a = e$, we know that $e\in H$.\\
+~\\
+Now that we now that $H$ has an identity element, it becomes easy to prove that every element in $H$ has an inverse. Again, let $a\in H$. We know that $e\in H$ and so $a{-1}e = a{-1} \in H$, and so every element in $H$ has an inverse.\\
+~\\
+Finally let $a,b \in H$. We also now that $a^{-1}\in H$, coming from the fact that every element in $H$ has an inverse. Therefore, $(a^{-1})^{-1}b = ab\in H$ and from this we see that $H$ is closed under the operation in group $G$.
+\end{proof}
+
+Next we will prove that if $H$ is a subgroup $G$, then whenever $h$ and $k$ are in $H$, $h^{-1}k$ is in $H$.
+
+\begin{proof}
+Let $a,b\in H$. We know that $a^{-1}$ is in $H$, because $H$ is a group and therefore every element in $H$ has an inverse. We also know from the fact that $H$ is a group it must be closed under its operation. Therefore, $h^{-1}k \in H$.
+\end{proof} 
+
+From these two proofs we can conclude that $H$ is a subgroup of $G$ if and only if whenever $h$ and $k$ are in $H$, then $h^{-1}k$ is in $H$.\\
+
+{\bf 4.}
+
+{\bf 3.}\\
+The first symmetry is the identity, \[\begin{pmatrix}1&2&3&4\\1&2&3&4\end{pmatrix}.\] The next set of symmetries are reflections. The first is a reflection through the plane containing edge $34$ and the midpoint of $12$. In permutation notation this is \[\begin{pmatrix}1&2&3&4\\2&1&3&4\end{pmatrix} = (12).\] The next five are the reflections through the plane containing edge $24$ and the midpoint of $13$, the plane containing edge $23$ and the midpoint of $14$, the plane containing the edge $14$ and the midpoint of $23$, the plane containing the edge $13$ and the midpoint of $24$, and the plane containing the edge $12$ and the midpoint of $34$. In permutation notation these are \[\begin{pmatrix}1&2&3&4\\3&2&1&4\end{pmatrix} = (13),\] \[\begin{pmatrix}1&2&3&4\\4&2&3&1\end{pmatrix} = (14),\] \[\begin{pmatrix}1&3&2&4\\1&2&3&4\end{pmatrix} = (23),\] \[\begin{pmatrix}1&2&3&4\\1&4&3&2\end{pmatrix} = (24),\] and \[\begin{pmatrix}1&2&3&4\\1&2&4&3\end{pmatrix} = (34)\]
+respectively.\\
+The next set of symmetries are rotations. The first of the three is a $180$ degree rotation about the axis through the midpoints of $12$ and $34$. In permutation notation this is \[\begin{pmatrix}1&2&3&4\\2&1&4&3\end{pmatrix} = (12)(34).\] The next two are all $180$ degree rotations about some axis. The first is through the midpoints of $13$ and $24$ and the second is through the midpoints of $14$ and $23$. In permutation notation these are \[\begin{pmatrix}1&2&3&4\\3&4&1&2\end{pmatrix} = (13)(24)\] and
+\[\begin{pmatrix}1&2&3&4\\4&3&2&1\end{pmatrix} = (14)(23)\] respectively.\\
+The last set of symmetries are rotations. The first of the three is a $120$ degree rotation counterclockwise about the axis through the $1$ and the center of $\triangle 123$. In permutation notation this is \[\begin{pmatrix}1&2&3&4\\1&3&4&2\end{pmatrix} = (234).\] 
+
+
+\end{document}
