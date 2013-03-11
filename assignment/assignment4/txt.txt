@@ -1,0 +1,28 @@
+The dihedral of order n, D_n, can be described like this:
+D_n = <a, d | a^n = e, d^2 = e, ad = da^(-1)>,
+where a is the smallest rotation element in some direction and d is any chosen reflection. We can then quickly find that any element of D_n can be written either as a power of a or d times some power of a, that is,
+D_n = {a^k | 0 <= k < n} u {da^k | 0 <= k < n} = <a> + d<a>.
+
+Now, the center of a group is the subset of all emenents which commute with any element of the group. That is, an element x belongs to the center of D_n if and only if xy = yx for any y in D_n.
+
+So, let's try finding some such x among the powers of a, or let x be a^p. Clearly, this commutes with all powers of a. Does it commute also with d*powers of a?
+a^p * d*a^k =(?) d*a^k * a^p
+Multiply from the right by a^(-k):
+a^p * d =(?) d * a^p
+Using the relation ad = da^(-1), we can rewrite to
+d * a^(-p) =(?) d * a^p
+Multiply from the left by a^p d^(-1):
+e = a^(2p)
+Therefore, if we assumed that x can be written in the form a^p, the it belongs to the center if and only if a^(2p) = x^2 is the unit element. This is certainly satisfied by x = a^0 = e. If n is odd, this is the only possibility; for even n, there is exactly one more choice: x = a^(n/2).
+
+Now we must not omit looking for more center elements among the second subset! So, let x = d*a^p. Does it commute with a^k for all k?
+d*a^p * a^k =(?) a^k * d*a^p
+Use a^k*d = d*a^(-k):
+d*a^(k+p) =(?) d*a^(p-k)
+Multiply from the left by d^(-1) and then by a^(-p):
+a^k =(?) a^(-k)
+Except for n <= 2, this can't be satisfied for all k. (For such small n, the group is Abelian and the answer below is valid anyway.) Therefore, we got no new x's from this branch.
+
+Answer:
+For odd n, the center is only {e}.
+For even n, the center is {e, a^(n/2)}.
