@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+\usepackage{verbatim}
+
+\usepackage{hyperref}
+
+
+%no paragraph indent
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+
+\begin{flushright}
+Russ Johnson\\
+Problem Set $\#5$\\
+\today\\
+\end{flushright}
+
+Activity 24.12 Write a formal proof of Lagrange's Theorem (Theorem 24.4).\\
+\begin{proof}
+Let $G$ be a finite group and let $H$ be a subgroup of $G$. From Theorem 24.3 we know that the left cosets of $H$ form a partition of $G$. Let $n$ be the number of distinct cosets of $H$ in $G$. Each left coset of $H$ contains $|H|$ elements. (Activity 24.7). And so, $|G| = n|H|$. In conclusion, $|H|$ divides $|G|$.
+\end{proof}
+Activity 24.13. Let $G$ be a group with identity $e$ and assume that $\sim$ is a congruence relation on $G$.\\
+(a) Let $H = \{x \in G : x \sim e\}$. Show that $H$ is a subgroup of $G$.\\
+~\\
+First of all, we know that $e\sim e$ from the reflexive property of the congruence relation $\sim$. And so, the identity element of $G$ is also in $H$.\\
+~\\
+Next, let $a\in H$. From the definition of the set $H$, we know that $a\sim e$. Because $\sim$ is a congruence relation,  $a^{-1} \sim e^{-1} $. And so, $a^{-1} \sim e$ which means that $a^{-1}\in H$. In conclusion, every element in $H$ has an inverse that is also in $H$. (Which is the same as the inverse of this element in $G$).\\
+~\\
+Finally, let $a,b\in H$. From the definition of the set $H$, we know that $a\sim e$ and $a\sim e$. Because $\sim$ is a congruence relation,  $ab \sim e^2 $. And so $ab \sim e$ which means that $ab\in H$. In conclusion, the operation in $G$ is closed in $H$.
+~\\
+The identity of $G$ is in $H$, every element in $H$ has an inverse, and the operator of $G$ is closed in the set $H$. And so, the set $H$ is a subgroup of $G$.\\
+~\\
+(b) Let $a, b \in G$. Prove that $a \sim b$ if and only if $a^{-1} b \in H$.\\
+~\\
+Let $a,b\in G$ such that $a\sim b$. From the reflexive property of the congruence relation $\sim$ we know that $a ^{-1}\sim a^{-1}$. Applying 
+(c) Explain why $\sim_H$ is the only possible congruence relation on a group $G$.\\
+~\\
+Activity 24.14.\\
+(a) State the converse of Lagrange's Theorem. What do we need to do to show that the converse of Lagrange's Theorem is not true?\\
+(b) Consider the group $G = A_4$ . List the elements of $A_4$ in cycle notation and determine the order of $A_4$.\\
+(c) Assume that $H$ is a subgroup of $A_4$ of order $6$.\\
+(i) Explain why the nonidentity elements of $H$ must have order $2$ or $3$.\\
+(ii) Explain why there must be an element $\alpha$ of $A_4$ of order $3$ that is not in $H$.\\
+(iii) Explain why the left cosets $H$, $\alpha H$ and $\alpha^2 H$ cannot all be distinct.\\
+(iv) Show that it is not possible for any two of $H$, $\alpha H$ and $\alpha^2 H$ to be equal.\\
+(d) Explain why the converse of Lagrange's Theorem is not true.\\
+~\\
+(4) A group $G$ contains elements of every order from $1$ to $10$. What is the smallest order $G$ could have? Find a group $G$ of that order that contains elements of every order from $1$ through $10$.\\
+~\\
+(6) Let $H = \{I, r\}$ in $D_4$.\\
+(a) Determine all of the distinct left cosets of $H$ in $D_4$.\\
+First of all, $D_4 = \{I, R, R^2, R^3, r, Rr, R^2r, R^3r\}$ and so $|D_4| = 8$. The number of distinct left cosets of $H$ in $D_4$ is referred to as the index and is $\dfrac{|D_4|}{|H|} = 4$. These four distinct left cosets are
+\[IH = rH = \{I, r\},\] 
+\[RH = RrH = \{R, Rr\},\]
+\[R^2H = R^2rH = \{R^2, R^2r\},\]
+and
+\[R^3H = R^3rH = \{R^3, R^3r\}.\]
+(b) Determine all of the distinct right cosets of $H$ in $D_4$.\\
+Like in part (a), there are four distinct right cosets. These right cosets are
+\[HI = Hr = \{I,r\},\]
+\[HR = HR^3r = \{R,R^3\},\]
+\[HR^2 = HR^2r = \{R^2, R^2r\},\]
+and
+\[HR^3 = HRr = \{R^3,Rr\}.\]
+\end{document}
