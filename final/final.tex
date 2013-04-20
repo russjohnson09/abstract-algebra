@@ -2,6 +2,8 @@
 %On linux 
 %sudo apt-get install texlive-full
 %sudo apt-get install texmaker
+%Getting started
+%http://en.wikibooks.org/wiki/LaTeX
 \documentclass[11pt]{article}
 \usepackage[a4paper]{geometry} 
 \geometry{a4paper, top=1.2cm, left=1.5cm, right=2.0cm, bottom=.1cm, includehead, includefoot}
@@ -39,7 +41,36 @@ where $k\in \langle [3] \rangle$ and $n\in \langle [21] \rangle$. And so,
 $ |\langle [3] \rangle \times \langle [21] \rangle| = |\langle [3] \rangle|\cdot |\langle [21] \rangle | = 10\cdot 2 = 20. $ 
 From the closure property of the group $G$ and the fact that $\langle [3] \rangle $ and $ \langle [21] \rangle$ are subgroups of $G$ we know that each element in $ \langle [3] \rangle \times \langle [21] \rangle $ is also in $G$. From this fact and the fact that $ \langle [3] \rangle \times \langle [21] \rangle $ and $G$ have the same order, it must be the case that $ G= \langle [3] \rangle \times \langle [21] \rangle $\\
 ~\\
-(b) 
+(b) When we decompose a group as an internal direct product, it is convenient for classification purposes to identify that internal direct product with an external direct product. Let $G$ be an arbitrary group with identity element $e$ and let $K$ and $N$ be normal subgroups of $G$ with $K \cap N = \{e\}$. Prove that 
+\[ K \times N \cong (K \oplus N).\]\\
+~\\
+\newcommand{\dom}{\ensuremath{K \oplus N}}
+\newcommand{\img}{\ensuremath{K \times N}}
+\begin{proof}
+We will prove that $\phi: K \oplus N \rightarrow K \times N$ such that $\phi((k,n)) = kn$ for all $k\in K$ and for all $n\in N$ is an isomorphism. In doing so we will have proven that $\dom$ and $\img$ are isomorphic and therefore $ (\dom) \cong (\img) $.\\
+~\\
+First we will show that the $\phi$ is in fact a function. This means that it is well-defined. Let $(k,n) = (k',n') \in \dom$. We will prove that $\phi((k,n)) = \phi((k',n'))$. We see that
+\[ \phi((k,n)) = kn = k'n' \phi((k',n')) \]
+and therefore $\phi$ is a function.\\
+~\\
+Next we will show that $\phi$ preserves structure and therefore is a homomorphism. Let $(k,n),(k',n')\in \dom$. First we see that 
+\[ \phi((k,n)(k',n')) = \phi((kk',nn')) = (kk')(nn'). \]
+From Theorem 26.6 (1) we know that $k'n=nk'$. Therefore,
+\[ \phi((k,n)(k',n')) = (kk')(nn') = k(k'n)n' = k(nk')n' = (kn)(k'n') = \phi((k,n))\phi((k'n')) \]
+and $\phi$ preserves the operation in $G$.\\
+~\\
+Finally, we will show that $\phi$ is both injective and surjective. Let $\phi((k,n)) = \phi((k',n'))$. First we note that
+\[ kn = \phi((k,n)) = \phi((k',n')) = k'n' \]
+and so $kn=k'n'$. From Theorem 26.6 (2) we know that $kn$ is a unique representation of an element in $\img$, which means that $k$ must be equal to $k'$ and $n$ must be equal to $n'$. Therefore, $(k,n) = (k',n')$ and $\phi$ is injective.\\
+~\\
+Let $kn\in \img$. The element $(k,n)\in \dom$ is such that $\phi((k,n))=kn$ and so $\phi is surjective$.
+\end{proof}
+~\\
+Explain why $U_{44} \cong (\mathbb{Z}_{10} \oplus \mathbb{Z}_2)$.\\
+~\\
+Because $\mathbb{Z}_{10} \cap \mathbb{Z}_2 = [1]$, it follows that
+ $\mathbb{Z}_{10} \times \mathbb{Z}_2 = U_{44}$ in a similar manner to part (a). Also from part (b) we know that $U_{44} = \mathbb{Z}_{10} \times \mathbb{Z}_2 \cong \mathbb{Z}_{10} \oplus \mathbb{Z}_2$. 
+Therefore, $U_{44} \cong (\mathbb{Z}_{10} \oplus \mathbb{Z}_2)$.
 
 \end{document}
 
