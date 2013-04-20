@@ -80,8 +80,20 @@ First of all,
 \[ N/K = \{K, [3]K\},\]
 and
 \[(G/K)/(N/K) = \{ N/K, ([7]K)(N/K) \}.\]
-The groups $(G/K)/(N/K)$ and $G/N$ both have only two elements and therefore are both isomorphic with $\mathbb{Z}_2$. And so, $(G/K)/(N/K) \cong G/N$.
-
+The groups $(G/K)/(N/K)$ and $G/N$ both have only two elements and therefore are both isomorphic with $\mathbb{Z}_2$. And so, $(G/K)/(N/K) \cong G/N$.\\
+~\\
+{\bf EXTRA CREDIT} We showed that if $N$ is a normal subgroup of a group $G$, then the operation
+\begin{equation}\label{1}
+(aN)(bN) = (ab)N
+\end{equation}
+on $G/N$ (the collection of left cosets of $N$ in $G$) is well-defined. Is the converse true? That is, if $G$ is a group and $N$ is a subgroup of $G$ so that \eqref{1} is well-defined, must $N$ be a normal subgroup of $G$? Prove your answer.\\
+~\\
+{\bf Conjecture.} If $G$ is a group and $N$ is a subgroup of $G$ such that the operation $(aN)(bN) = (ab)N$ is well-defined, then $N$
+\begin{proof}
+Let $G$ be group with identity $e$ and let $N$ be a subgroup of $G$ such that the operation $(aN)(bN) = (ab)N$ is well-defined. Let $n\in N$. We know that $nN = eN$ from the definition of a coset. Let $g\in G$. We know that $(eN)(gN) = (eg)N = gN$, because the operation $(aN)(bN) = (ab)N$ is well-defined. Also, because $nN = eN$ we see that 
+\[gN = (eN)(gN) = (nN)(gN) = (ng)N.\]
+And so, $gN = (ng)N$. Multiplying the inverse of $g$ on the left we obtain $N = (g^{-1}ng)N$. From the definition of a coset we now know that $g^{-1}ng \in N$. Finally, from this we can conclude that $g^{-1}Ng \subseteq N$, which makes $N$ a normal subgroup of $G$.
+\end{proof}
 \end{document}
 
 
