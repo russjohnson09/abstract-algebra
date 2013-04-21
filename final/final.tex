@@ -1,4 +1,5 @@
 %Written using Texmaker.
+%https://github.com/russjohnson09/abstract-algebra
 %On linux 
 %sudo apt-get install texlive-full
 %sudo apt-get install texmaker
@@ -81,6 +82,31 @@ First of all,
 and
 \[(G/K)/(N/K) = \{ N/K, ([7]K)(N/K) \}.\]
 The groups $(G/K)/(N/K)$ and $G/N$ both have only two elements and therefore are both isomorphic with $\mathbb{Z}_2$. And so, $(G/K)/(N/K) \cong G/N$.\\
+~\\
+(b) Prove the Third isomorphism theorem as stated below.\\
+{\bf Theorem} (The Third Isomorphism Theorem). {\it Let $G$ be a group, $K$ and $N$ normal subgroups of $G$ with $K \subseteq N$. Then $(G/K)/(N/K) \cong G/N$.}\\
+~\\
+\begin{proof}
+Let $G$ be a group, $K$ and $N$ normal subgroups of $G$ with $K \subseteq N$. Let $\phi : G/K \rightarrow G/N$ such that $\phi(gK) = gN $. First we need to make sure that $\phi$ is well-defined. Let $xK = yK$. In other words, $y^{-1}x \in K$. Because $K$ is a subset of $N$ we know that $y^{-1}x \in N$. And so, $xN = yN$. Therefore, $\phi(xK) = \phi(yK)$ and $\phi$ is well-defined.\\
+~\\
+Next let $xK,yK \in G/K $. We see that
+\begin{align*}
+\phi(xK)\phi(yK) &= (xN)(yN)\\
+&= (xy)N\\
+&= \phi((xy)K).
+\end{align*}
+Therefore, $\phi$ preserves structure and is a homomorphism. \\
+~\\
+Next we note that,
+\begin{align*}
+Ker(\phi) &= \{gK \in G/K: \phi(gK) = e_{G/N} \}\\
+&= \{ gK \in G/K: gN = N \}\\
+&= \{ gK \in G/K: g \in N \}\\
+&= N/K.
+\end{align*}
+Finally, we will show that $Im(\phi) = G/N$ and apply The First Isomorphism Theorem to obtain $(G/K)/(N/K) \cong G/N$. 
+
+\end{proof}
 ~\\
 {\bf EXTRA CREDIT} We showed that if $N$ is a normal subgroup of a group $G$, then the operation
 \begin{equation}\label{1}
