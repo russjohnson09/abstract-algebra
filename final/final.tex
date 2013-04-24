@@ -32,6 +32,36 @@ Final Exam\\
 \today\\
 \end{flushright}
 
+1.\\
+This semester we studied group theory in some depth. Write an essay that describes the different types of groups and subgroups we encountered and why each type is important. Your discussion should include relevant definitions, relationships between the different types of groups, examples and non-examples to explain the relationships, and various methods for constructing new groups from old. You do NOT need to include any proofs in this essay. Your essay will be graded on how complete and through it is.
+
+~
+
+We will first go over the basics of what a group is and some subgroups that occur in all groups. A group is a set $G$ on which one binary operation, denoted $\cdot$, is define such that the following axioms hold true. The set $G$ is closed under its operation, the operation $\cdot$ is associative in $G$, the set $G$ contains an identity element, and the set $G$ contains an inverse for each of its elements. In addition, a group is Abelian if the operation is commutative in $G$. 
+
+~
+
+One of the first classes of groups that we mentioned in class was the dihedral groups. A dihedral group is denoted $D_n$ where $n$ is some positive integer greater than or equal to three. A dihedral group is made up of all of the symmetries of a normal n-gon with composition as its operation. For example, $D_3$ would be the set of all the symmetries of an equilateral triangle. Another group that we talked about latter in the semester is the group of permutations, denoted $S_n$. This group contains all of the symmetries of the group $D_n$, but also contains some permutations that are not symmetries. In fact, $D_n$ is a subgroup of $S_n$. Another interesting result is Cayley's Theorem which states that every group is a subgroup of a group of permutations. This is interesting, because it means that all group theory can be reduced to the study of permutations.
+
+~
+
+In order to better understand a group it can be useful to study the subgroup of a group. A subset $H$ of a group $G$ is a subgroup if $H$ is a group using the same operation as in $G$. One of the first subgroups that we mentioned in class was the center of a group. The center of a group is the set of all elements that commute in this group. If a group is Abelian, then the center of this group is simply the group itself. One reason that the center of a group is useful is that it is always normal which we will talk about latter.
+
+~
+
+Another example of a subgroup is the cyclic subgroup. A cyclic subgroup of $G$ is the smallest subgroup containing some element in $G$ and is denoted $\langle a \rangle$ where $a\in G$. A group $G$ is cyclic if it contains a generator $a$ such that $G=\langle a \rangle$. a unique trait of cyclic groups is that every subgroup of a cyclic group is cyclic. At this point it may be useful to introduce presentations. Presentations are made up of a set contains generators of a group $G$ and relations that define the group. A cyclic group $G$ with order $n$ and generator $a$ has the presentation $\langle a | a^n = 1 \rangle $. The dihedral group $D_n$ has the presentation 
+$\{r, R | r^2 = 1, R^n = 1, rR = R^{-1}r\}$.
+
+~
+
+Finally, we have the normal subgroups. These subgroups are important, because they allow us to break a group down into simpler quotient groups. Many theorems rely on normal subgroups and their quotients. Normal subgroups can be used to break groups up into two parts, trivial and nontrivial groups. A trivial group is a group in which the only normal subgroups are itself and a subgroup containing the identity. A nontrivial group is simply a group that is not trivial. Mathematicians have been able to classify all of the finite simple groups into either an infinite family where there is an established pattern or in one of the sporadic groups. A group $N$ is a normal subgroup of $G$, denoted $N \triangleleft G $, if for all $a\in G$, $aN = Na$. In other words if all left and right cosets are equal, a subgroup is normal. A left coset being the set $aN = \{an : n \in N\}$ for some $a$ in $G$. When $N \triangleleft G$ we can create the following group $G/N = \{aN : a\in G\}$ with the operation with the operation $(aN )(bN ) = (ab)N$ for all $a,b \in G$. This group is the refered to as the quotient group of $G$ by $N$. A quotient group can tell us some important things about the original group. For example, if $G$ is a group and $G/Z(G)$ is cyclic, then $G$ is Abelian.
+
+~
+
+Two ways of constructing new groups from old are with internal and external direct products. The external direct product of the groups $G$ and $H$, denoted $G\oplus H$, is the set of their Cartesian product with the operation $(g_1 , h_1 )(g_2 , h_2 ) = (g_1 \cdot_G g_2 , h_1 \cdot_H h_2 )$.  The internal direct product of the normal subgroups $K$ and $N$ of $G$ such that $K\cap N = \{e_G\}$ is denoted $G\times H$ and should not to be confused with the Cartesian product. It consists of the set $\{ kn : k \in K, n \in N \}$ with the operation $\cdot_G$.
+
+~
+
 2.\\
 (a) The operation table for $U_{44}$ is given in Table 1. Explain why $U_{44}=\langle [3] \rangle \times \langle [21] \rangle$, the internal direct product of the subgroups $\langle [3] \rangle$ and $\langle [21] \rangle$.\\
 ~\\
@@ -134,3 +164,7 @@ http://drexel28.wordpress.com/2011/01/02/review-of-group-theory-the-first-isomor
 http://drexel28.wordpress.com/2011/01/02/review-of-group-theory-the-third-isomorphism-theorem/
 
 http://www.proofwiki.org/wiki/Equivalence_of_Definitions_of_Normal_Subgroup
+
+
+
+Towards the end of the semester we found that every group is the subgroup of a group of permutations. And so, group theory can be broken down to the study of permutations.
